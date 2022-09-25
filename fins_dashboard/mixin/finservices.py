@@ -49,6 +49,8 @@ class FinServicesAdmin(TemplateView):
                f'{self.get_service_status_time[16:19]} {self.get_service_status_time[19:]}'
 
     def get_fin_services_status(self):
+        self.fin_service = []
+        self.fin_service_status = []
         for fin in range(self.service_start, self.service_end):
             self.fin_service.append(self.fin_service_name(self.file_data[fin]))
             self.fin_service_status.append(self.fin_services_status(self.file_data[fin]))
