@@ -1,10 +1,11 @@
 |actions|
 
-REP-SCHEDULE
+FIN-SERVICE-DASHBOARD
 --------
 
-Report Scheduler
+Fin Services Dashboard
 
-.. |actions| image:: https://github.com/frdrckaman/reportScheduler/actions/workflows/build.yml/badge.svg?branch=develop
-  :target: https://github.com/frdrckaman/reportScheduler/actions/workflows/build.yml
+.. |actions| image:: https://github.com/frdrckaman/fins/actions/workflows/build.yml/badge
+.svg?branch=develop
+  :target: https://github.com/frdrckaman/fins/actions/workflows/build.yml
 
