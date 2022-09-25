@@ -1,6 +1,6 @@
-from django.apps import AppConfig
+from django.apps import AppConfig as DjangoAppConfig
 
 
-class FinsDashboardConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
+class AppConfig(DjangoAppConfig):
     name = 'fins_dashboard'
+    verbose_name = "Fins Dashboard"
