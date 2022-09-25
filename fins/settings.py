@@ -9,9 +9,10 @@ ENV_DIR = str(Path(os.path.join(BASE_DIR, ".env")))
 env = environ.Env(
     DJANGO_DEBUG=(bool, False),
     DEBUG_TOOLBAR=(bool, False),
-    DJANGO_EDCS_BOOTSTRAP=(int, 3),
     DATABASE_SQLITE_ENABLED=(bool, False),
     DJANGO_EMAIL_ENABLED=(bool, False),
+    FIN_START_RANGE=(int, 4),
+    FIN_END_RANGE=(int, 26),
 )
 
 environ.Env.read_env(ENV_DIR)
@@ -28,6 +29,14 @@ APP_NAME = env.str("DJANGO_APP_NAME")
 DEBUG = env("DJANGO_DEBUG")
 
 DEBUG_TOOLBAR = env("DEBUG_TOOLBAR")
+
+FIN_SERVICE_FILE = env.str("FIN_SERVICE_FILE")
+
+FIN_START_RANGE = env("FIN_START_RANGE")
+
+FIN_END_RANGE = env("FIN_END_RANGE")
+
+FIN_SERVICE_NAME = env.str("FIN_SERVICE_NAME")
 
 ALLOWED_HOSTS = []
 
