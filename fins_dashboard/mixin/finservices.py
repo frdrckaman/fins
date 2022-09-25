@@ -19,8 +19,8 @@ class FinServicesAdmin(TemplateView):
         context.update(
             service_title=self.service_title,
             service_time=self.show_service_time,
-            fin_service=self.fin_service,
-            fin_service_status=self.fin_service_status,
+            fin_service_name=self.fin_service,
+            fin_services_status=self.fin_service_status,
         )
         return context
 
